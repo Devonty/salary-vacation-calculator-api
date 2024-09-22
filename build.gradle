@@ -1,0 +1,31 @@
+plugins {
+    id "java"
+    id "io.spring.dependency-management" version "1.0.11.RELEASE"
+    id 'org.springframework.boot' version '2.5.3'
+}
+
+group = 'ru.neostudy'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+/**
+ * Spring
+ */
+dependencies {
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web'\
+}
+
+/**
+ * Tests
+ */
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
