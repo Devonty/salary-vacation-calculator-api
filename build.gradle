@@ -7,6 +7,9 @@ plugins {
 group = 'ru.neostudy'
 version = '1.0'
 
+sourceCompatibility = '11'
+targetCompatibility = '11'
+
 repositories {
     mavenCentral()
 }
